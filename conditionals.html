@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Curso JavaScript</title>
+</head>
+<body>
+    <script>
+        function checkGender(gender) {
+            if (gender === "F") {
+                return "Feme";
+            } else if (gender === "M") {
+                return "Male";
+            } else {
+                return "Other";
+            }
+        }
+
+        function anotherCheckGender(gender) {
+            switch (gender) {
+                case 'F': return "Feme";
+                case 'M': return "Male";
+                default: return "Other";
+            }
+        }
+
+        var result = checkGender('M');
+        console.log(result);
+
+        result = anotherCheckGender('M');
+        console.log(result);
+    </script>
+</body>
+</html>
