@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <script>
+        function temHabilidade(skills) {
+            var hasSkill = false;
+            for(var i = 0; i < skills.length; i++) {
+                if (skills[i] == 'Javascript') {
+                    hasSkill = true;
+                }
+            }
+            return hasSkill;
+        }
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        console.log(temHabilidade(skills)); // true ou false
+        </script>
+    </body>
+</html>
